@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>フェードイン・フェードアウト</title>
+  <link rel="stylesheet" type="text/css" href="./base.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script>
+    $(function(){
+      var toggleCheck = false
+      // ここに処理を記述
+      $('.btn').on("click", function(){
+        toggleCheck =  !toggleCheck
+
+        if(toggleCheck){
+          $(".btn").text('フェードイン')
+          $( ".img-space" ).animate({
+          
+            opacity: '0' 
+          }, 750, function() {
+            
+          });
+        }else{
+          $(".btn").text('フェードアウト')
+          $( ".img-space" ).animate({
+          
+            opacity: '1' 
+          }, 750, function() {
+            
+          });
+        }
+
+        
+
+
+        
+        
+
+        
+
+        
+      });
+      
+
+    
+    });
+  </script>
+</head>
+<body>
+  <div class="space">
+      <div class="btn-space">
+        <button class="btn" type="submit">フェードアウト</button>
+      </div>
+      <div class="img-space">
+        <img class="img" src="./images/outsourcing.jpg">
+      </div>
+  </div>
+</body>
+</html>

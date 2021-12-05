@@ -1,0 +1,20 @@
+.space{
+    width:100%;
+    text-align: center;
+    margin-top:200px;
+}
+
+.img-space{
+    margin-top:20px;
+}
+
+.btn{
+    width:200px;
+    height:60px;
+    background-color: #fdd;
+    border:none;
+}
+
+.img{
+    width:300px;
+}
